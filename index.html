@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Building Guide</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            color: #00ff99;
+            text-shadow: 0 0 10px #00ff99;
+            animation: glow 2s infinite alternate;
+        }
+
+        a {
+            text-decoration: none;
+            color: transparent;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00ff99, 0 0 40px #00ff99;
+            }
+            to {
+                text-shadow: 0 0 20px #00ff99, 0 0 30px #00ff99, 0 0 40px #00ff99, 0 0 50px #00ff99;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>PC Building Guide</h1>
+        <div class="container">
+            <a href="index1.html"><img src="https://cdn.leonardo.ai/users/6045dde2-769d-41af-9005-223b67840caf/generations/120aa0ec-06d4-4d00-ab76-e468b6e52acf/Leonardo_Phoenix_A_highly_detailed_and_welllit_photograph_of_a_3.jpg" alt="Step 1: Install the CPU"></a>
+            <a href="index2.html"><img src="https://cdn.leonardo.ai/users/6045dde2-769d-41af-9005-223b67840caf/generations/120aa0ec-06d4-4d00-ab76-e468b6e52acf/Leonardo_Phoenix_A_highly_detailed_and_welllit_photograph_of_a_2.jpg" alt="Step 2: Mount the Motherboard"></a>
+            <a href="index3.html"><img src="https://cdn.leonardo.ai/users/6045dde2-769d-41af-9005-223b67840caf/generations/120aa0ec-06d4-4d00-ab76-e468b6e52acf/Leonardo_Phoenix_A_highly_detailed_and_welllit_photograph_of_a_1.jpg" alt="Step 3: Add RAM and Components"></a>
+            <a href="index4.html"><img src="https://cdn.leonardo.ai/users/6045dde2-769d-41af-9005-223b67840caf/generations/120aa0ec-06d4-4d00-ab76-e468b6e52acf/Leonardo_Phoenix_A_highly_detailed_and_welllit_photograph_of_a_0.jpg" alt="Step 4: Connect the Power Supply"></a>
+        </div>
+    </div>
+</body>
+</html>

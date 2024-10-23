@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1: Install the CPU</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #00ff99;
+            text-shadow: 0 0 10px #00ff99;
+            margin-top: 30px;
+            animation: glow 2s infinite alternate;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+        }
+
+        p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            text-align: justify;
+            margin: 20px;
+        }
+
+        a {
+            color: #00ff99;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-top: 30px;
+        }
+
+        a:hover {
+            text-shadow: 0 0 10px #00ff99;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .modal-content:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #00ff99;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 30px #00ff99, 0 0 40px #00ff99;
+            }
+            to {
+                text-shadow: 0 0 20px #00ff99, 0 0 30px #00ff99, 0 0 40px #00ff99, 0 0 50px #00ff99;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Step 1: Install the CPU</h1>
+
+    <div class="container">
+        <img src="img1.jpg" alt="Step 1 - Image 1" onclick="openModal(this.src)">
+        <img src="img2.jpg" alt="Step 1 - Image 2" onclick="openModal(this.src)">
+        <img src="img3.jpg" alt="Step 1 - Image 3" onclick="openModal(this.src)">
+        <img src="img4.jpg" alt="Step 1 - Image 4" onclick="openModal(this.src)">
+    </div>
+
+    <p>
+        The CPU is the brain of your PC. To install it, carefully place the processor into the CPU socket on the motherboard, ensuring that the pins line up correctly. Lower the socket lever to secure the CPU in place. Handle it with care to avoid damaging the delicate pins.
+    </p>
+
+    <a href="index.html">← Back to Home</a>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+        // Open the Modal
+        function openModal(src) {
+            document.getElementById("myModal").style.display = "block";
+            document.getElementById("img01").src = src;
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
